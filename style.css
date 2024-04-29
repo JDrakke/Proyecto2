@@ -1,0 +1,98 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    color: #eeff01;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+#btnUpdate{
+    display: none;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #00ff15;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #008cff;
+    color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff2f2f;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+table th,
+table td {
+    border: 1px solid #000000; 
+}
+
+table th {
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 10px;
+    text-align: center;
+}
+
+table td {
+    padding: 10px;
+    text-align: center;
+}
+
+table td button {
+    margin-right: 5px;
+}
+
+.status-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.status-indicator.active {
+    background-color: rgb(3, 255, 3);
+}
+
+.status-indicator.inactive {
+    background-color: red;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    table {
+        overflow-x: auto;
+    }
+}
