@@ -1,4 +1,3 @@
-
 function validateForm() {
     let name = document.getElementById('inputName').value;
     let rut = document.getElementById('inputRut').value;
@@ -37,7 +36,6 @@ function validateForm() {
     return true;
 }
 
-
 function readData() {
     let listPeople = [];
     if (localStorage.getItem('listPeople') !== null) {
@@ -58,7 +56,6 @@ function readData() {
 
     document.querySelector('#tableData tbody').innerHTML = html;
 
-   
     let statusIndicators = document.querySelectorAll('.status-indicator');
     listPeople.forEach(function (element, index) {
         if (element.status === 'activo') {
@@ -68,7 +65,6 @@ function readData() {
         }
     });
 }
-
 
 function addData() {
     if (validateForm()) {
@@ -95,7 +91,6 @@ function addData() {
 
         readData();
 
-       
         document.getElementById('inputName').value = "";
         document.getElementById('inputRut').value = "";
         document.getElementById('inputEmail').value = "";
@@ -135,7 +130,7 @@ function editData(index) {
             readData();
             document.getElementById('btnAdd').style.display = "inline-block";
             document.getElementById('btnUpdate').style.display = "none";
-          
+
             document.getElementById('inputName').value = "";
             document.getElementById('inputRut').value = "";
             document.getElementById('inputEmail').value = "";
@@ -144,7 +139,6 @@ function editData(index) {
         }
     };
 }
-
 
 window.onload = function () {
     readData();
