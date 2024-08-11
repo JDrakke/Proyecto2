@@ -6,9 +6,53 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/* Header */
+header {
+    background-color: #007bff; /* Fondo azul para el header */
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.navbar .nav-link {
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #ffcc00; /* Color amarillo al pasar el cursor */
+}
+
+/* Footer */
+footer {
+    background-color: #000000; /* Fondo negro para el footer */
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #eeff01; /* Color amarillo para enlaces en el footer */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ffcc00; /* Color amarillo oscuro al pasar el cursor */
+}
+
 #btnUpdate {
     display: none;
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -96,3 +140,4 @@ table td button {
         overflow-x: auto;
     }
 }
+
